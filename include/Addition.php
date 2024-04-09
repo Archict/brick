@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Gashmob\ProjectTemplate;
+namespace Archict\Brick;
 
 final readonly class Addition
 {

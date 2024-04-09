@@ -1,5 +1,5 @@
-# PHP Composer project template
+# Archict/Brick
 
-This PHP template uses composer to manage dependencies and autoload.
+> To build something, you need bricks
 
-To begin use this template, just change the namespace in `composer.json`.
+Base library of Archict framework
