@@ -1,6 +1,7 @@
 {
     "name": "archict/brick",
     "description": "Base library for Archict framework",
+    "license": "MIT",
     "type": "library",
     "autoload": {
         "psr-4": {
