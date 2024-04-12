@@ -30,23 +30,14 @@ namespace Archict\Brick;
 use Attribute;
 
 /**
- * Attribute Service
+ * Attribute ServiceConfiguration
  *
  * - Can be applied only on class
- * - Use it to declare a Service
+ * - Use it to declare a class used as Service configuration
  *
  * Please see documentation for more information
  */
 #[Attribute(Attribute::TARGET_CLASS)]
-final readonly class Service
+final class ServiceConfiguration
 {
-    /**
-     * @param ?class-string $configuration_classname class-string of a class with attribute ServiceConfiguration
-     * @param ?string $configuration_filename name of configuration file, default to target class name lower case
-     */
-    public function __construct(
-        public ?string $configuration_classname = null,
-        public ?string $configuration_filename = null,
-    ) {
-    }
 }
