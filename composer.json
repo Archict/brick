@@ -20,7 +20,7 @@
     "scripts": {
         "phpstan": "phpstan analyse -c phpstan.neon",
         "psalm": "psalm -c psalm.xml",
-        "phpcs": "phpcs include tests"
+        "phpcs": "phpcs include"
     },
     "config": {
         "allow-plugins": {
