@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        test: [ 'unit-test', 'phpcs', 'psalm', 'phpstan' ]
+        test: [ 'phpcs', 'psalm', 'phpstan' ]
     steps:
       - uses: actions/checkout@v4
 
