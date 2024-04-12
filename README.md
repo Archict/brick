@@ -108,14 +108,11 @@ your Service class name lowercased (`myservice.yml`), you can change this behavi
 ```php
 <?php
 
-use Archict\Brick\ServiceConfiguration;
+use Archict\Brick\Service;
 
-#[ServiceConfiguration('foo.yml')]
-final readonly class MyConfiguration 
+#[Service(MyConfiguration::class, 'foo.yml')]
+final readonly class MyService 
 {
-    public function __construct(
-        public int $nb_workers,
-    ) {}
 }
 ```
 

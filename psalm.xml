@@ -4,6 +4,5 @@
 >
     <projectFiles>
         <directory name="include" />
-        <directory name="tests" />
     </projectFiles>
 </psalm>
