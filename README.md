@@ -71,9 +71,6 @@ First you need to create a data class which store the configuration variables:
 ```php
 <?php
 
-use Archict\Brick\ServiceConfiguration;
-
-#[ServiceConfiguration]
 final readonly class MyConfiguration 
 {
     public function __construct(
@@ -146,9 +143,6 @@ Dispatching an Event need some steps. First you need to have an Event class:
 ```php
 <?php
 
-use Archict\Brick\Event;
-
-#[Event]
 final class MyEvent {}
 ```
 
