@@ -146,25 +146,25 @@ Dispatching an Event need some steps. First you need to have an Event class:
 final class MyEvent {}
 ```
 
-Then add the package `archict/core` to your dependencies. It contains the Service `EventManager` which is necessary to
+Then add the package `archict/core` to your dependencies. It contains the Service `EventDispatcher` which is necessary to
 dispatch an Event. You can now use it in your Service to dispatch your Event.
 
 ```php
 <?php
 
 use Archict\Brick\Service;
-use Archict\Core\EventManager;
+use Archict\Core\Event\EventDispatcher;
 
 #[Service]
 final readonly class MyService
 {
     public function __construct(
-        private EventManager $event_manager,
+        private EventDispatcher $dispatcher,
     ) {}
     
     public function someMethod(): void
     {
-        $this->event_manager->dispatch(new MyEvent());
+        $this->dispatcher->dispatch(new MyEvent());
     }
 }
 ```
